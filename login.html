@@ -1,0 +1,28 @@
+<html>
+<head>
+<titile>Logon Page</title>
+<Link type="text/css" rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<form action="file:///C:/Users/NIIT/Desktop/html/regsus.html">
+<font face=""times new roman" size=""16">
+<fieldset color="black" size="4">
+<legend>Sign Up</legend>
+<marquee>Registration Page</marquee><center>
+
+FIRST NAME       :<input type="text" name="fname" required pattern="[a-zA-Z]{3,}"><br><br>
+LAST NAME        :<input type="text" name="lname" requirerd pattern="[a-zA-Z]{3,}"><br><br>
+GENDER           :<input type="radio" name="gender" value="male">Male <input type="radio" name="gender" name="female">FeMale<br><br>
+ADDRESS          :<textarea name="address" rows="5" cols="20"></textarea><br><br>
+USER NAME        :<input type="text" id="uid" required pattern="[a-zA-z]{3,}"><br><br>
+EAMIL ID         :<input type="text" name="eid" title="email" placeholder="emailid" required patter="[a-zA-Z0-9]{3,}@[a-zA-Z]{3,}.{1}[a-zA-Z]{2,}"><br><br>
+PASSWORD:<input id="password" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
+   CONFIRM PASSWORD:<input id="password_two" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="Verify Password" required>
+<br><br><br>PHONE NUMBERE     :<input type="text" name="phone" max="10" pattern="[0-9]{10}" title="please enter a mobile number" required><br><br>
+<input type="submit" value="Submit">     <input type="reset" values="reset"><br><br></center>
+<center>ALREADY HAVE AN ACCOUNT, JUST CLICK HERE<a href="main.html">Login</a></center>
+
+</fieldset>
+</form>
+</body>
+</html>
